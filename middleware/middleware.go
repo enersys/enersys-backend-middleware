@@ -105,3 +105,7 @@ func verifyAccessToken(tokenString string, keyPem []byte) (*jwt.Token, error) {
 		return jwt.ParseRSAPublicKeyFromPEM(keyPem)
 	})
 }
+
+func Test_call() {
+	fmt.Println("Heloo")
+}
