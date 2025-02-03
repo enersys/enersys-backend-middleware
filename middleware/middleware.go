@@ -34,11 +34,12 @@ type KeycloakClaim struct {
 			Roles []string `json:"roles"`
 		} `json:"account"`
 	} `json:"resource_access"`
-	Scope        string `json:"scope"`
-	SessionState string `json:"session_state"`
-	Sid          string `json:"sid"`
-	Sub          string `json:"sub"`
-	Typ          string `json:"typ"`
+	Scope        string   `json:"scope"`
+	SessionState string   `json:"session_state"`
+	Sid          string   `json:"sid"`
+	Sub          string   `json:"sub"`
+	Typ          string   `json:"typ"`
+	GropsUser    []string `json:"groups_user'`
 }
 
 // LoggingMiddleware logs request details
